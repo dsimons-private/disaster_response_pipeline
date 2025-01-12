@@ -25,3 +25,8 @@ requirements.txt for detailed information about package and version.
 
 The web app is started by executing the python file 'run.py' in the folder `'1_app'`. Alternatively, using
 terminal with the command: `'python run.py'` in the respective folder
+
+## ToDo's /Future Improvements
+
+- [ ] Improve efficency and accuracy by enlarging grid search parameter.
+- [ ] try more / different pipeline components
