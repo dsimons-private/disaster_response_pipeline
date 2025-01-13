@@ -26,7 +26,7 @@ Please ensure to set up an enviroment with the required Python libaries
 
 - To run **ETL Pipeline** : Switch to directory `DisasterResponsePipeline\2_data` and run command `python process_data.py` -> this creates file **Messages.db** in the same folder
 - To run **ML Pipeline** :  Switch to directory `DisasterResponsePipeline\3_models` and run command `python train_classifier.py` -> this creates file **model.pkl** in the same folder
-- To run **Web App** : Switch to directory `DisasterResponsePipeline\1_app` and run command `python run.py` -> click on an address to start the web app in your browser
+- To run **Web App** : Switch to directory `DisasterResponsePipeline\1_app` and run command `python run.py` -> copy the address to start the web app in your browser
 
 ## ToDo's /Future Improvements
 
