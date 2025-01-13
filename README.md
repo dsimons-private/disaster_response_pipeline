@@ -22,9 +22,11 @@ In this project, Python 3 is used as programming language with external packages
 requirements.txt for detailed information about package and version.
 
 ## Instructions
+Please ensure to set up an enviroment with the required Python libaries
 
-The web app is started by executing the python file 'run.py' in the folder `'1_app'`. Alternatively, using
-terminal with the command: `'python run.py'` in the respective folder
+- To run **ETL Pipeline** : Switch to directory `DisasterResponsePipeline\2_data` and run command `python process_data.py` -> this creates file **Messages.db** in the same folder
+- To run **ML Pipeline** :  Switch to directory `DisasterResponsePipeline\3_models` and run command `python train_classifier.py` -> this creates file **model.pkl** in the same folder
+- To run **Web App** : Switch to directory `DisasterResponsePipeline\1_app` and run command `python run.py` -> click on an address to start the web app in your browser
 
 ## ToDo's /Future Improvements
 
