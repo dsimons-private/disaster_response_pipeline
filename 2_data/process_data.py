@@ -4,14 +4,15 @@ from pathlib import Path
 from sqlalchemy import create_engine
 
 
-def load_data(path_to_input_data: Path) -> pandas.DataFrame:
+def load_data(path_to_input_data: str) -> pandas.DataFrame:
     """
     Load data (e.g. messages, categories) from CSV file into pandas dataframe
 
     :param path_to_input_data: path to csv file
     :return: load as pandas dataframe
     """
-    input_df = pd.read_csv(path_to_input_data)
+    cwd = Path.cwd()
+    input_df = pd.read_csv(cwd / Path(path_to_input_data))
     return input_df
 
 
@@ -75,8 +76,8 @@ def save_to_database(df: pandas.DataFrame, table_name: str) -> None:
 
 if __name__ == '__main__':
     # extract from source
-    input_messages_df = load_data(Path("messages.csv"))
-    input_categories_df = load_data(Path("categories.csv"))
+    input_messages_df = load_data("messages.csv")
+    input_categories_df = load_data("categories.csv")
 
     # clean and transform
     clean_transformed_df = clean_and_transform_data(messages_df=input_messages_df,
